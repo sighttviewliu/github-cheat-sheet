@@ -55,6 +55,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [GitHub Resources](#github-resources)
       - [GitHub Talks](#github-talks)
     - [SSH keys](#ssh-keys)
+    - [Repository Templates](#repository-templates)
   - [Git](#git)
     - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
     - [Previous Branch](#previous-branch)
@@ -77,6 +78,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
       - [Git Videos](#git-videos)
       - [Git Articles](#git-articles)
 
+
 ## GitHub
 ### Ignore Whitespace
 Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only the code that has changed.
@@ -86,7 +88,7 @@ Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabli
 [*Read more about GitHub secrets.*](https://github.com/blog/967-github-secrets)
 
 ### Adjust Tab Space
-Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views, but a [Chrome](https://chrome.google.com/webstore/detail/tab-size-on-github/ofjbgncegkdemndciafljngjbdpfmbkn) or [Opera extension](https://addons.opera.com/en/extensions/details/github-tab-size/) can automate this.
+Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views, but a [Chrome extension](https://chrome.google.com/webstore/detail/tab-size-on-github/ofjbgncegkdemndciafljngjbdpfmbkn) can automate this.
 
 Here is a Go source file before adding `?ts=4`:
 
@@ -256,7 +258,7 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 ![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
 
 ### Closing Issues via Commit Messages
-If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed`, `close/closes/closed` or `resolve/resolves/resolved`, followed by the issue number, will close the issue once it is committed to the master branch.
+If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed`, `close/closes/closed` or `resolve/resolves/resolved`, followed by the issue number, will close the issue once it is committed to the repository's default branch.
 
 ```bash
 $ git commit -m "Fix screwup, fixes #12"
@@ -646,6 +648,7 @@ If you are a student you will be eligible for the GitHub Student Developer Pack.
 | GitHub Training | https://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
 | Github Education (Free Micro Account and other stuff for students) | https://education.github.com/ |
+| GitHub Top 10 Best Practices | [Best Practices List](https://datree.io/blog/top-10-github-best-practices/) |
 
 #### GitHub Talks
 | Title | Link |
@@ -667,6 +670,18 @@ https://github.com/{user}.keys
 e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
 
 [*Read more about accessing public ssh keys.*](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
+
+### Repository Templates
+
+You can enable templating on your repository which allows anyone to copy the directory structure and files, allowing them to instantly use the files (e.g. for a tutorial or if writing boilerplate code). This can be enabled in the settings of your repository.
+
+![Convert](https://i.postimg.cc/hGCrVm9F/Template.gif)
+
+Changing to a template repository will give a new URL endpoint which can be shared and instantly allows users to use your repository as a template. Alternatively, they can go to your repository and click the 'Use as template' button.
+
+![Template](https://i.postimg.cc/L8PKCHx0/New-Template.gif)
+
+[*Read more about using repositories as templates*](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/)
 
 ## Git
 ### Remove All Deleted Files from the Working Tree
@@ -1023,7 +1038,6 @@ $ git config --global color.ui 1
 | Everyday Git | http://git-scm.com/docs/everyday |
 | Git Immersion | http://gitimmersion.com/ |
 | Git God | https://github.com/gorosgobe/git-god |
-| Ry's Git Tutorial | http://rypress.com/tutorials/git/index |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | https://training.github.com/kit/ |
